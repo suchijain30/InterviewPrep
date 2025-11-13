@@ -53,7 +53,7 @@ export default function ExperienceDetail() {
     try {
       const token = await user.getIdToken();
       const res = await axios.patch(
-        `https://interviewprep-backend-5os4.onrender.com/interview/${id}/upvote`,
+        `${import.meta.env.BACKEND_URL}/interview/${id}/upvote`,
         {},
         { headers: { Authorization: `Bearer ${token}` } }
       );
@@ -256,7 +256,7 @@ export default function ExperienceDetail() {
                         {r.duration && (
                           <span className="flex items-center gap-1">
                             <FaClock className="w-3 h-3" />
-                            {r.duration} min
+                            {r.duration}-min
                           </span>
                         )}
                         {r.mode && (

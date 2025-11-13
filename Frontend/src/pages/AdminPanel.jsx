@@ -37,7 +37,7 @@ const AdminApproval = () => {
       const token = await auth.currentUser?.getIdToken();
 
       await axios.patch(
-        `https://interviewprep-backend-5os4.onrender.com/${type}/${id}/${action}`,
+        `${import.meta.env.BACKEND_URL}/${type}/${id}/${action}`,
         {},
         {
           headers: {
