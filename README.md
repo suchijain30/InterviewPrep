@@ -74,7 +74,7 @@ Moderate experience submissions, OA questions, and more
 ## 🚀 Getting Started
 
 ```bash
-git clone https://github.com/ranveer193/InterviewPrep.git
+git clone https://github.com/suchijain30/InterviewPrep
 cd InterviewPrep
 npm install
 npm start
